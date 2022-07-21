@@ -10,6 +10,9 @@ public class FizzBuzz {
         if(i%5 == 0){
             answer += "Buzz";
         }
+        if(i%7 == 0){
+            answer += "Whizz";
+        }
         return answer.length() == 0?"" + i:answer;
     }
 
