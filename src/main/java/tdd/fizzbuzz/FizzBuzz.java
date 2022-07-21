@@ -1,20 +1,35 @@
 package tdd.fizzbuzz;
 
-public class FizzBuzz {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-    public String countOff(int i) {
+public class FizzBuzz {
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+    private static final String WHIZZ = "Whizz";
+
+    public String countOff(int number) {
         String answer = "";
-        if (i % 3 == 0) {
-            answer += "Fizz";
+        if (number % 3 == 0) {
+            answer += FIZZ;
         }
-        if (i % 5 == 0) {
-            answer += "Buzz";
+        if (number % 5 == 0) {
+            answer += BUZZ;
         }
-        if (i % 7 == 0) {
-            answer += "Whizz";
+        if (number % 7 == 0) {
+            answer += WHIZZ;
         }
-        return answer.length() == 0 ? "" + i : answer;
+        return answer.length() == 0 ? "" + number : answer;
     }
 
+//    public boolean isDigitsInTheNumber(int theDigit, int number) {
+//        List<Integer> digits = getDigits(number);
+//        return digits.stream().anyMatch(digit -> theDigit == digit);
+//    }
+
+//    public List<Integer> getDigits(int number) {
+//        return null;
+//    }
 
 }
