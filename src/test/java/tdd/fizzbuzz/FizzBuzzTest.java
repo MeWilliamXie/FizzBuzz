@@ -33,6 +33,15 @@ public class FizzBuzzTest {
         assertEquals("Buzz",answer);
     }
 
+    @Test
+    public void should_say_Whizz_when_countOff_given_7(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String answer = fizzBuzz.countOff(7);
+
+        assertEquals("Whizz",answer);
+    }
+
 
 
 }
