@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FizzBuzzTest {
 
     @Test
-    public void should_say_order_number_when_given_1(){
+    public void should_say_order_number_when_countOff_given_1(){
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         String answer = fizzBuzz.countOff(1);
@@ -16,7 +16,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_say_Fizz_when_given_3(){
+    public void should_say_Fizz_when_countOff_given_3(){
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         String answer = fizzBuzz.countOff(3);
@@ -25,7 +25,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_say_Buzz_when_given_5(){
+    public void should_say_Buzz_when_countOff_given_5(){
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         String answer = fizzBuzz.countOff(5);
