@@ -24,6 +24,15 @@ public class FizzBuzzTest {
         assertEquals("Fizz",answer);
     }
 
+    @Test
+    public void should_say_Buzz_when_given_5(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String answer = fizzBuzz.countOff(5);
+
+        assertEquals("Buzz",answer);
+    }
+
 
 
 }
